@@ -1,0 +1,24 @@
+.header {
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  background: #040404;
+}
+
+.container {
+  padding-left: 3rem;
+
+  > span {
+    font-family: 'Okta Neue';
+    font-weight: 600;
+    font-size: 2rem;
+  }
+}
+
+.title {
+  color: #F93F31;
+}
+
+.subtitle {
+  color: #6EB1D8;
+}

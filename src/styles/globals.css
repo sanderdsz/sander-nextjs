@@ -10,3 +10,19 @@ body {
   overflow-x: hidden;
 }
 
+@font-face {
+  font-family: "Okta Neue";
+  src: url("../../public/fonts/OktaNeue-Normal.woff") format("woff");
+}
+@font-face {
+  font-family: "Okta Neue";
+  font-weight: 800;
+  font-style: italic;
+  src: url("../../public/fonts/OktaNeue-HeavyItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Okta Neue";
+  font-weight: 600;
+  src: url("../../public/fonts/OktaNeue-SemiBold.woff") format("woff");
+}
+

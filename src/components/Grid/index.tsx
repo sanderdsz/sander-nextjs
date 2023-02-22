@@ -1,7 +1,7 @@
-import { WidthProvider, Responsive } from 'react-grid-layout';
-import Image from 'next/image';
+import { WidthProvider, Responsive } from 'react-grid-layout'
+import Image from 'next/image'
 
-const ResponsiveGridLayout = WidthProvider(Responsive);
+const ResponsiveGridLayout = WidthProvider(Responsive)
 
 const layout = [
   { i: "first", x: 0, y: 0, w: 2, h: 14, minW: 2, maxW: 2 },
