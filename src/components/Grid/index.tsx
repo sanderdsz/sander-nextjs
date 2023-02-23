@@ -53,7 +53,7 @@ const Grid = () => {
   return (
     <>
       <ResponsiveGridLayout
-        layouts={{ lg: layoutLG, md: layoutSM, sm: layoutSM }}
+        layouts={{ lg: layoutLG, md: layoutLG, sm: layoutSM }}
         breakpoints={{ lg: 1200, md: 996, sm: 768, xs: 480 }}
         cols={{ lg: 4, md: 2, sm: 2, xs: 2 }}
         margin={[0, 0]}
@@ -62,26 +62,19 @@ const Grid = () => {
         isResizable={false}
       >
         <div key="first" style={{background: '#ECE4DE'}}>
-          {(screenWidth <= 996) ? (
-            <GridItem height={`${gridItemHeight}px`}>
-              <p>Width: {screenWidth}</p>
-              <p>Height: {screenHeight}</p>
-            </GridItem>
-          ) : (
-            <GridItem height={`${2 * gridItemHeight}px`}>
-              <p>Width: {screenWidth}</p>
-              <p>Height: {screenHeight}</p>
-            </GridItem>
-          )}
+          <GridItem height={`${2 * gridItemHeight}px`}>
+            <p>Width: {screenWidth}</p>
+            <p>Height: {screenHeight}</p>
+          </GridItem>
         </div>
         <div key="second" style={{background: '#FFFFFF'}}>
-          <GridItem height={`${gridItemHeight}px`} />
+          <GridItem height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`} />
         </div>
         <div key="third" style={{background: '#6E5494'}}>
-          <GridItem height={`${gridItemHeight}px`} />
+          <GridItem height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`} />
         </div>
         <div key="fourth" style={{background: '#87B5CB'}}>
-          <GridItem height={`${gridItemHeight}px`}>
+          <GridItem height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               {/* 
               <Image
@@ -96,13 +89,13 @@ const Grid = () => {
           </GridItem>
         </div>
         <div key="fifth" style={{background: '#0077B5'}}>
-          <GridItem height={`${gridItemHeight}px`} />
+          <GridItem height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`} />
         </div>
         <div key="sixth" style={{background: '#D9D9D9'}}>
-          <GridItem height={`${gridItemHeight}px`} />
+          <GridItem height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`} />
         </div>
         <div key="seventh" style={{background: '#B6342A'}}>
-          <GridItem height={`${gridItemHeight}px`} />
+          <GridItem height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`} />
         </div>
       </ResponsiveGridLayout>
     </>
