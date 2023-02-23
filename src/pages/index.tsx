@@ -1,6 +1,7 @@
+import Head from 'next/head'
+import Footer from '@/components/Footer'
 import Grid from '@/components/Grid'
 import Header from '@/components/Header'
-import Head from 'next/head'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <main>
         <Header />
         <Grid />
+        <Footer />
       </main>
     </>
   )

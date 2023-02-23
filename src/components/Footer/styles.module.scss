@@ -1,0 +1,17 @@
+.footer {
+  height: 9.5rem;
+  display: flex;
+  justify-content: center;
+  background-color: #040404;
+}
+
+.container {
+  position: relative;
+  > span {
+    bottom: 0;
+    margin-bottom: 1rem;
+    font-size: .75rem;
+    font-family: 'Okta Neue';
+    color: #E8E2E0;
+  }
+}
