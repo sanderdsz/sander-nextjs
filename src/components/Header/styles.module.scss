@@ -1,8 +1,14 @@
+@use "/src/styles/variables";
+
 .header {
   height: 7rem;
   display: flex;
   align-items: center;
   background: #040404;
+
+  @media (max-width: variables.$breakpoint-sm) {
+    justify-content: center;
+  }
 }
 
 .container {
@@ -12,6 +18,10 @@
     font-family: 'Okta Neue';
     font-weight: 600;
     font-size: 2rem;
+  }
+
+  @media (max-width: variables.$breakpoint-sm) {
+    padding: 0;
   }
 }
 

@@ -1,20 +1,36 @@
+@use "src/styles/variables";
+
 .about {
   padding: 3rem;
 
   span {
     font-size: 1.25rem;
     font-family: "Okta Neue";
+
+    @media (max-width: variables.$breakpoint-xs) {
+      font-size: 1rem;
+    }
   }
 
   a {
     color: #F93F31;
     font-family: "Okta Neue";
+    font-weight: 600;
+  }
+
+  @media (max-width: variables.$breakpoint-xs) {
+    padding: 1.5rem;
   }
 }
 
 .about__header {
   height: 1.5rem;
   margin-bottom: 2rem;
+
+  @media (max-width: variables.$breakpoint-xs) {
+    height: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .about__name {
@@ -31,6 +47,14 @@
     &:last-child {
       color: #87B5CB;
     }
+
+    @media (max-width: variables.$breakpoint-xs) {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: variables.$breakpoint-xs) {
+    margin-bottom: .5rem;
   }
 }
 
