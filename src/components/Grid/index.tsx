@@ -6,6 +6,7 @@ import UseDeviceSize from '@/utils/UseDeviceSize';
 
 import "/node_modules/react-grid-layout/css/styles.css";
 import "/node_modules/react-resizable/css/styles.css";
+import About from '../About';
 
 const ResponsiveGridLayout = WidthProvider(Responsive)
 
@@ -63,12 +64,12 @@ const Grid = () => {
       >
         <div key="first" style={{background: '#ECE4DE'}}>
           <GridItem height={`${2 * gridItemHeight}px`}>
-            <p>Width: {screenWidth}</p>
-            <p>Height: {screenHeight}</p>
           </GridItem>
         </div>
         <div key="second" style={{background: '#FFFFFF'}}>
-          <GridItem height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`} />
+          <GridItem isCenterVertical height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`}>
+            <About />  
+          </GridItem>
         </div>
         <div key="third" style={{background: '#6E5494'}}>
           <GridItem height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`} />

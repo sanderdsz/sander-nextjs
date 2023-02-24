@@ -11,6 +11,10 @@ body {
   background-color: #040404;
 }
 
+a {
+  text-decoration:none
+}
+
 @font-face {
   font-family: "Okta Neue";
   src: url("../../public/fonts/OktaNeue-Normal.woff") format("woff");
@@ -27,3 +31,7 @@ body {
   src: url("../../public/fonts/OktaNeue-SemiBold.woff") format("woff");
 }
 
+.Typewriter__wrapper {
+  font-size: 1rem;
+  font-family: "Okta Neue";
+}
