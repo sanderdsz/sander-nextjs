@@ -1,10 +1,12 @@
+import React from "react";
 import styles from "./styles.module.scss"
 
 type ButtonProps = {
-  children: any
+  children: React.ReactNode
+  link?: string
 }
 
-const Button = ({ children }: ButtonProps) => {
+const Button = ({ children, link }: ButtonProps) => {
   function handleClick() {
     console.log('click')
   }
@@ -14,7 +16,19 @@ const Button = ({ children }: ButtonProps) => {
       className={styles.container}
       onClick={handleClick}
     >
-      { children }
+      { link ? (
+        <a
+          href={link}
+          target='_blank'
+          rel='noreferrer'
+        >
+          { children }
+        </a>
+      ) : (
+        <>
+          { children }
+        </>
+      ) }
     </button>
   )
 }

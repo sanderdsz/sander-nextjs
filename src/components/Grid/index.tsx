@@ -82,7 +82,7 @@ const Grid = () => {
             isCenter
             height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`}
           >
-            <Button>
+            <Button link="https://github.com/sanderdsz">
               <GithubLogo size={screenWidth <= 996 ? 80 : 128} />
             </Button>
           </GridItem>
@@ -105,7 +105,7 @@ const Grid = () => {
             isCenter
             height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`}
           >
-            <Button>
+            <Button link="https://www.linkedin.com/in/sandersz/">
               <LinkedinLogo size={screenWidth <= 996 ? 80 : 128} />
             </Button>
           </GridItem>
@@ -119,7 +119,7 @@ const Grid = () => {
             isCenter
             height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`}
           >
-            <Button>
+            <Button link="mailto:sanderdsz@gmail.com">
               <PaperPlaneTilt size={screenWidth <= 996 ? 80 : 128} />
             </Button>
           </GridItem>
