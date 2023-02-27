@@ -35,3 +35,7 @@ a {
   font-size: 1rem;
   font-family: "Okta Neue";
 }
+
+.react-grid-item.react-grid-placeholder {
+  background: grey !important;
+}

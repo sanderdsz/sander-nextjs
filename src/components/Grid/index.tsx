@@ -4,9 +4,12 @@ import { WidthProvider, Responsive } from 'react-grid-layout'
 import GridItem from '../GridItem';
 import UseDeviceSize from '@/utils/UseDeviceSize';
 
+import About from '../About';
+import Button from "@/components/Button";
+import { GithubLogo, PaperPlaneTilt, LinkedinLogo } from 'phosphor-react';
+
 import "/node_modules/react-grid-layout/css/styles.css";
 import "/node_modules/react-resizable/css/styles.css";
-import About from '../About';
 
 const ResponsiveGridLayout = WidthProvider(Responsive)
 
@@ -61,18 +64,28 @@ const Grid = () => {
         containerPadding={[0, 0]}
         rowHeight={50}
         isResizable={false}
+        isDraggable={ !(screenWidth <= 996) }
       >
         <div key="first" style={{background: '#ECE4DE'}}>
           <GridItem height={`${2 * gridItemHeight}px`}>
           </GridItem>
         </div>
         <div key="second" style={{background: '#FFFFFF'}}>
-          <GridItem isCenterVertical height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`}>
+
+          <GridItem
+            isCenterVertical height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`}>
             <About />  
           </GridItem>
         </div>
         <div key="third" style={{background: '#6E5494'}}>
-          <GridItem height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`} />
+          <GridItem
+            isCenter
+            height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`}
+          >
+            <Button>
+              <GithubLogo size={80} />
+            </Button>
+          </GridItem>
         </div>
         <div key="fourth" style={{background: '#87B5CB'}}>
           <GridItem height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`}>
@@ -90,13 +103,28 @@ const Grid = () => {
           </GridItem>
         </div>
         <div key="fifth" style={{background: '#0077B5'}}>
-          <GridItem height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`} />
+          <GridItem
+            isCenter
+            height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`}
+          >
+            <Button>
+              <LinkedinLogo size={80} />
+            </Button>
+          </GridItem>
         </div>
         <div key="sixth" style={{background: '#D9D9D9'}}>
-          <GridItem height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`} />
+          <GridItem height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`}>
+          </GridItem>
         </div>
         <div key="seventh" style={{background: '#B6342A'}}>
-          <GridItem height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`} />
+          <GridItem
+            isCenter
+            height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`}
+          >
+            <Button>
+              <PaperPlaneTilt size={80} />
+            </Button>
+          </GridItem>
         </div>
       </ResponsiveGridLayout>
     </>
