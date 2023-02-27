@@ -10,8 +10,15 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   const song: any = await response.json()
 
+  let title
+
+  if (song.item.name.length > 20) {
+    title = song.item.name.slice(0, 20) + '...'
+  } else {
+    title = song.item.name
+  }
+
   const isPlaying = true;
-  const title = song.item.name;
   const artist = song.item.artists.map((artist: any) => artist.name).join(", ");
   const album = song.item.album.name;
   const albumImageUrl = song.item.album.images[0].url;

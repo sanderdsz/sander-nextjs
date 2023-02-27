@@ -1,13 +1,25 @@
+@use "src/styles/variables";
+
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+
+  @media (max-width: variables.$breakpoint-xs) {
+    justify-content: flex-start;
+    padding: 3rem;
+  }
 }
 
 .info {
   display: flex;
   flex-direction: column;
   padding-left: 3rem;
+
+  @media (max-width: variables.$breakpoint-xs) {
+    padding-left: 2rem;
+  }
 }
 
 .song__header {
@@ -15,13 +27,25 @@
   align-items: center;
   font-size: 1.5rem;
   color: #1ED760;
+
+  @media (max-width: variables.$breakpoint-xs) {
+    font-size: 1rem;
+  }
 }
 
 .song__title {
   font-size: 2rem;
   font-weight: 600;
+
+  @media (max-width: variables.$breakpoint-xs) {
+    font-size: 1.25rem;
+  }
 }
 
 .song__artist {
   font-size: 1.5rem;
+
+  @media (max-width: variables.$breakpoint-xs) {
+    font-size: 1rem;
+  }
 }
