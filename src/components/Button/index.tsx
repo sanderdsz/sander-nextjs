@@ -1,3 +1,4 @@
+import { getRecentlyPlayed } from "@/lib/spotify";
 import React from "react";
 import styles from "./styles.module.scss"
 
@@ -12,6 +13,7 @@ const Button = ({ children, link, background }: ButtonProps) => {
     <button
       className={styles.container}
       style={{background: background}}
+      onClick={getRecentlyPlayed}
     >
       { link ? (
         <a
