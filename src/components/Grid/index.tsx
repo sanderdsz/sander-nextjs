@@ -10,6 +10,7 @@ import { GithubLogo, PaperPlaneTilt, LinkedinLogo } from 'phosphor-react';
 
 import "/node_modules/react-grid-layout/css/styles.css";
 import "/node_modules/react-resizable/css/styles.css";
+import Hero from '../Hero';
 
 const ResponsiveGridLayout = WidthProvider(Responsive)
 
@@ -67,7 +68,8 @@ const Grid = () => {
         isDraggable={ !(screenWidth <= 996) }
       >
         <div key="first" style={{background: '#ECE4DE'}}>
-          <GridItem height={`${2 * gridItemHeight}px`}>
+          <GridItem isCenterVertical height={`${2 * gridItemHeight}px`}>
+            <Hero />
           </GridItem>
         </div>
         <div key="second" style={{background: '#FFFFFF'}}>
@@ -94,7 +96,7 @@ const Grid = () => {
                 style={{ objectFit: 'cover' }}
                 src="/sander-photo.png" 
                 alt="me"
-                width={`${screenWidth <= 960 ? 198 : 353}`}
+                width={`${screenWidth <= 960 ? 190 : 353}`}
                 height={`${screenWidth <= 960 ? 196 : 346}`}
               />
             </div>
