@@ -94,8 +94,8 @@ const Grid = () => {
                 style={{ objectFit: 'cover' }}
                 src="/sander-photo.png" 
                 alt="me"
-                width={`${screenWidth <= 960 ? 198 : 360}`}
-                height={`${screenWidth <= 960 ? 196 : 360}`}
+                width={`${screenWidth <= 960 ? 198 : 353}`}
+                height={`${screenWidth <= 960 ? 196 : 346}`}
               />
             </div>
           </GridItem>
