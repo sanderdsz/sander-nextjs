@@ -4,17 +4,14 @@ import styles from "./styles.module.scss"
 type ButtonProps = {
   children: React.ReactNode
   link?: string
+  background?: string
 }
 
-const Button = ({ children, link }: ButtonProps) => {
-  function handleClick() {
-    console.log('click')
-  }
-
+const Button = ({ children, link, background }: ButtonProps) => {
   return (
     <button
       className={styles.container}
-      onClick={handleClick}
+      style={{background: background}}
     >
       { link ? (
         <a

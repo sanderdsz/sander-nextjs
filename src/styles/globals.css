@@ -16,6 +16,10 @@ a {
   color: inherit;
 }
 
+span {
+  font-family: "Okta Neue";
+}
+
 @font-face {
   font-family: "Okta Neue";
   src: url("../../public/fonts/OktaNeue-Normal.woff") format("woff");

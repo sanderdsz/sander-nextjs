@@ -11,6 +11,7 @@ import { GithubLogo, PaperPlaneTilt, LinkedinLogo } from 'phosphor-react';
 import "/node_modules/react-grid-layout/css/styles.css";
 import "/node_modules/react-resizable/css/styles.css";
 import Hero from '../Hero';
+import Spotify from '../Spotify';
 
 const ResponsiveGridLayout = WidthProvider(Responsive)
 
@@ -113,7 +114,8 @@ const Grid = () => {
           </GridItem>
         </div>
         <div key="sixth" style={{background: '#D9D9D9'}}>
-          <GridItem height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`}>
+          <GridItem isCenter height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`}>
+            <Spotify />
           </GridItem>
         </div>
         <div key="seventh" style={{background: '#B6342A'}}>
