@@ -23,7 +23,7 @@ const Spotify = () => {
 
   return (
     <div className={styles.container}>
-      <Button background='#1ED760'>
+      <Button padding={'.5rem'} background='#1ED760'>
         <SpotifyLogo size={screenWidth <= 996 ? 80 : 128} />
       </Button>
       <div className={styles.info}>

@@ -6,13 +6,14 @@ type ButtonProps = {
   children: React.ReactNode
   link?: string
   background?: string
+  padding?: string
 }
 
-const Button = ({ children, link, background }: ButtonProps) => {
+const Button = ({ children, link, background, padding }: ButtonProps) => {
   return (
     <button
       className={styles.container}
-      style={{background: background}}
+      style={{background: background, padding: padding}}
       onClick={getRecentlyPlayed}
     >
       { link ? (

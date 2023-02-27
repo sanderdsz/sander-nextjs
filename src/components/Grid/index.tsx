@@ -85,22 +85,31 @@ const Grid = () => {
             isCenter
             height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`}
           >
-            <Button link="https://github.com/sanderdsz">
+            <Button padding={'.5rem'} link="https://github.com/sanderdsz">
               <GithubLogo size={screenWidth <= 996 ? 80 : 128} />
             </Button>
           </GridItem>
         </div>
         <div key="fourth" style={{background: '#87B5CB'}}>
-          <GridItem height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`}>
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <Image
-                style={{ objectFit: 'cover' }}
-                src="/sander-photo.png" 
-                alt="me"
-                width={`${screenWidth <= 960 ? 190 : 353}`}
-                height={`${screenWidth <= 960 ? 196 : 346}`}
-              />
-            </div>
+          <GridItem isCenter height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`}>
+              <Button>
+                <div
+                  style={{
+                    width: `${screenWidth <= 996 ? 6 : 9}rem`,
+                    height: `${screenWidth <= 996 ? 6 : 9}rem`,
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    position: 'relative',
+                  }}
+                >
+                  <Image
+                    fill
+                    src="/sander-photo.png"
+                    alt="me"
+                  />
+                </div>
+              </Button>
           </GridItem>
         </div>
         <div key="fifth" style={{background: '#0077B5'}}>
@@ -108,7 +117,7 @@ const Grid = () => {
             isCenter
             height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`}
           >
-            <Button link="https://www.linkedin.com/in/sandersz/">
+            <Button padding={'.5rem'} link="https://www.linkedin.com/in/sandersz/">
               <LinkedinLogo size={screenWidth <= 996 ? 80 : 128} />
             </Button>
           </GridItem>
@@ -123,7 +132,7 @@ const Grid = () => {
             isCenter
             height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`}
           >
-            <Button link="mailto:sanderdsz@gmail.com">
+            <Button padding={'.5rem'} link="mailto:sanderdsz@gmail.com">
               <PaperPlaneTilt size={screenWidth <= 996 ? 80 : 128} />
             </Button>
           </GridItem>
