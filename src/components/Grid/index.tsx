@@ -83,22 +83,20 @@ const Grid = () => {
             height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`}
           >
             <Button>
-              <GithubLogo size={80} />
+              <GithubLogo size={screenWidth <= 996 ? 80 : 128} />
             </Button>
           </GridItem>
         </div>
         <div key="fourth" style={{background: '#87B5CB'}}>
           <GridItem height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              {/* 
               <Image
                 style={{ objectFit: 'cover' }}
                 src="/sander-photo.png" 
                 alt="me"
-                width="360"
-                height="345"
-              />  
-              */}
+                width={`${screenWidth <= 960 ? 198 : 360}`}
+                height={`${screenWidth <= 960 ? 196 : 360}`}
+              />
             </div>
           </GridItem>
         </div>
@@ -108,7 +106,7 @@ const Grid = () => {
             height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`}
           >
             <Button>
-              <LinkedinLogo size={80} />
+              <LinkedinLogo size={screenWidth <= 996 ? 80 : 128} />
             </Button>
           </GridItem>
         </div>
@@ -122,7 +120,7 @@ const Grid = () => {
             height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`}
           >
             <Button>
-              <PaperPlaneTilt size={80} />
+              <PaperPlaneTilt size={screenWidth <= 996 ? 80 : 128} />
             </Button>
           </GridItem>
         </div>
