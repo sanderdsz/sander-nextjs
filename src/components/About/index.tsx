@@ -30,6 +30,7 @@ const About = () => {
         ) }
       </span>
       <a
+        className={styles.animation}
         target="_blank"
         href="https://www.nttdata.com/global/en/"
         rel="noreferrer"
