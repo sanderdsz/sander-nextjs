@@ -1,4 +1,6 @@
-$bg: #040404;
+@use "src/styles/variables";
+
+$bg: variables.$snow-200;
 $size: 2px;
 $duration-base: .8;
 

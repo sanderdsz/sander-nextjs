@@ -36,6 +36,7 @@
 .song__title {
   font-size: 2rem;
   font-weight: 600;
+  color: variables.$snow-200;
 
   @media (max-width: variables.$breakpoint-xs) {
     font-size: 1.25rem;
@@ -44,6 +45,7 @@
 
 .song__artist {
   font-size: 1.5rem;
+  color: variables.$snow-200;
 
   @media (max-width: variables.$breakpoint-xs) {
     font-size: 1rem;

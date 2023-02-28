@@ -122,7 +122,7 @@ const Grid = () => {
             </Button>
           </GridItem>
         </div>
-        <div key="sixth" style={{background: '#D9D9D9'}}>
+        <div key="sixth" style={{background: '#6A6969'}}>
           <GridItem isCenter height={`${screenWidth <= 996 ? (2 * gridItemHeight) : (gridItemHeight)}px`}>
             <Spotify />
           </GridItem>
